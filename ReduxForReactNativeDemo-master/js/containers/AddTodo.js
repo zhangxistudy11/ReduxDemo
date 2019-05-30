@@ -17,7 +17,9 @@ class AddTodo extends Component {
     }
 
     render(){
+        //todo:dispatch哪里来的
         let { dispatch } = this.props;
+        //点击事件触发action
         return (
             <View style={{flexDirection: 'row'}}>
                 <TextInput

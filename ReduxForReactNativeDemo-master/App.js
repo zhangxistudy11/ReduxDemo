@@ -14,8 +14,10 @@ import { Navigation } from 'react-native-navigation'
 import { registerScreens } from './js/components/screens'
 
 const logger = createLogger();
+//全局的根store
 const store = createStore(
     rootReducer,
+    //添加中间件
     applyMiddleware(thunk, logger)
 );
 
