@@ -12,7 +12,7 @@ import thunk from 'redux-thunk'
 import rootReducer from './js/reducers'
 import { Navigation } from 'react-native-navigation'
 import { registerScreens } from './js/components/screens'
-
+// https://juejin.im/post/5bac26ad6fb9a05d353c8040
 const logger = createLogger();
 //全局的根store
 const store = createStore(
