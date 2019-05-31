@@ -19,7 +19,7 @@ class AddTodo extends Component {
     render(){
         //todo:dispatch哪里来的
         let { dispatch } = this.props;
-        //点击事件触发action
+        //点击事件触发action，dispatch出去一个新的对象
         return (
             <View style={{flexDirection: 'row'}}>
                 <TextInput
@@ -31,5 +31,6 @@ class AddTodo extends Component {
         )
     }
 }
-
+//使组件和Store连接起来,组件的props能拿到dispatch
 export default connect()(AddTodo)
+// export default AddTodo

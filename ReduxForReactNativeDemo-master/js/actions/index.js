@@ -11,7 +11,8 @@ import  {
     INVALIDATE_SUBREDDIT
 } from './types'
 let nextTodoId = 0;
-
+//action的对象，根据type对应到reducer的对象里
+//Store 自动调用 Reducer，并且传入两个参数：当前 State 和收到的 Action。 Reducer 会返回新的 State
 export const addTodo = text => ({
     type: ADD_TODO,
     id: nextTodoId++,

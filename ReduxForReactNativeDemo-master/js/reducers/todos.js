@@ -7,6 +7,7 @@ import  {
 } from '../actions/types'
 
 const todos = (state = [], action) => {
+   // Store 自动调用 Reducer，并且传入两个参数：当前 State 和收到的 Action。 Reducer 会返回新的 State
     let {id, text, type} = action;
     switch (type) {
         case ADD_TODO:
